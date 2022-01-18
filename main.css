@@ -24,6 +24,7 @@ input[type="number"] {
 }
 
 .container {
+  margin: auto;
   max-width: 600px;
   height: 60vh;
   -webkit-box-pack: justify;
