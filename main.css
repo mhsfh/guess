@@ -10,7 +10,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 input::-webkit-outer-spin-button,
@@ -26,10 +26,10 @@ input[type="number"] {
 .container {
   margin: auto;
   max-width: 600px;
-  height: 60vh;
+  height: 600px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
 }
 
@@ -47,12 +47,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 label {
@@ -60,16 +60,16 @@ label {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-column-gap: 10px;
-  column-gap: 10px;
+          column-gap: 10px;
 }
 
 label input {
@@ -77,7 +77,7 @@ label input {
   font-size: 20px;
   padding: 7px;
   border-radius: 15px;
-  border: var(--orange) 3px inset hsl(0, 100%, 83%);
+  border: var(--orange) 3px inset;
 }
 
 label button {
@@ -90,7 +90,7 @@ label button {
 
 .pre {
   -ms-flex-item-align: start;
-  align-self: flex-start;
+      align-self: flex-start;
   width: 100%;
   text-align: left;
   border: 1px solid wheat;
