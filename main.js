@@ -3,8 +3,11 @@ btn.addEventListener("click", play)
 x = null;
 con = 0;
 function play() {
+    btn.innerHTML = "Submit guess"
+    rsl.innerHTML = ""
+    rsl.style.backgroundColor = "unset"
     if (num.value != "") {
-        btn.innerHTML = "Submit guess"
+        con == 0 ? x = null : null;
         con += 1
         console.log(`x = ${x}`)
         console.log(`con = ${con}`)
@@ -36,7 +39,6 @@ function chk(x) {
         } else if (num.value == x) {
             rsl.innerHTML = `Congratulations! You got it right!`
             rsl.style.backgroundColor = "var(--green)"
-            x = null
             con = 0
             btn.innerHTML = "New Game"
             pre.innerHTML = ""
